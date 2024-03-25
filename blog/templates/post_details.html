@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-3 left">
+                <div class="site-heading">
+                    <h3 class="site-heading my-4 mt-3 text-black">
+                        {% block title %}
+                        {{ object.title }}
+                        {% endblock title %}
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 card mb-4  mt-3 left  top">
+        <div class="card-body">
+          <img src="URL_DE_L_IMAGE" alt="Titre de l'article" class="img-fluid">
+          <p class=" text-muted">Auteur de l'article | Date de creation de l'article</p>
+          <p class="card-text ">Contenu de l'article</p>
+        </div>
+      </div>
+      <!-- Bloc de la barre laterale -->
+      <div class="col-md-4 mt-3 right">
+        
+      </div>
+    </div>
+</div>
+{% endblock content %}
